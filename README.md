@@ -1,4 +1,4 @@
-# 🐳 Docker
+# 🐳 Docker e Cloud
 
 ## Fundamentos e práticas essenciais do Docker
 
