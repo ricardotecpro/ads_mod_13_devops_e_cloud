@@ -1,5 +1,6 @@
 # 🐳 Docker
-Fundamentos e práticas essenciais do Docker
+
+## Fundamentos e práticas essenciais do Docker
 
 ## 📜 Tópicos
 1.  O Problema: "Funciona na Minha Máquina!"
