@@ -1,4 +1,4 @@
-# Aplicação **Todolist** com **Next.js no frontend** e **NestJS no backend**, usando **Docker** e **MySQL**.
+# Aplicação **listatarefas** com **Next.js no frontend** e **NestJS no backend**, usando **Docker** e **MySQL**.
 
 Vou dividir a explicação em etapas lógicas, garantindo que você compreenda cada parte antes de avançar.
 
@@ -8,7 +8,7 @@ Vou dividir a explicação em etapas lógicas, garantindo que você compreenda c
 
 #### **Objetivo**
 
-Vamos desenvolver uma aplicação Todolist com as seguintes funcionalidades:  
+Vamos desenvolver uma aplicação listatarefas com as seguintes funcionalidades:  
 ✅ Criar tarefas  
 ✅ Listar tarefas  
 ✅ Atualizar status (drag and drop entre "A Fazer" e "Executadas")  
@@ -128,7 +128,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       port: 3306,
       username: 'root',
       password: 'root',
-      database: 'todolist',
+      database: 'listatarefas',
       autoLoadEntities: true,
       synchronize: true,
     }),
@@ -317,7 +317,7 @@ Para o **frontend**, crie `frontend/Dockerfile`:
 ```dockerfile
 FROM node:20
 WORKDIR /app
-COPY . .
+COPY ../.. .
 RUN npm install
 RUN npm run build
 EXPOSE 3001
@@ -333,7 +333,7 @@ services:
     image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: todolist
+      MYSQL_DATABASE: listatarefas
     ports:
       - "3306:3306"
   backend:
@@ -358,7 +358,7 @@ docker-compose up --build
 
 
 
-# 📌 TodoList App
+# 📌 listatarefas App
 
 Este projeto é um aplicativo de lista de tarefas (ToDo List) desenvolvido com **Next.js** no frontend e **NestJS** no backend. Utiliza **MySQL** para armazenamento de dados e é totalmente containerizado com **Docker**.
 
@@ -372,7 +372,7 @@ Este projeto é um aplicativo de lista de tarefas (ToDo List) desenvolvido com *
 ## 📂 Estrutura do Projeto
 
 ```
-todolist-app/
+listatarefas-app/
 │── backend/              # Backend NestJS
 │   ├── src/
 │   │   ├── tasks/        # Módulo de Tarefas (API)
@@ -403,8 +403,8 @@ Certifique-se de ter instalado:
 ### 2️⃣ Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/todolist-app.git
-cd todolist-app
+git clone https://github.com/seu-usuario/listatarefas-app.git
+cd listatarefas-app
 ```
 
 ### 3️⃣ Subir os Containers com Docker
@@ -467,7 +467,7 @@ DELETE /tasks/:id
 ---
 
 📌 Projeto desenvolvido como um exemplo prático para aprender Next.js, NestJS e Docker. 🚀
-🎉 Pronto! Agora você tem um **Todolist completo** com **NestJS, Next.js e Docker**! 🚀
+🎉 Pronto! Agora você tem um **listatarefas completo** com **NestJS, Next.js e Docker**! 🚀
 
 ---
 

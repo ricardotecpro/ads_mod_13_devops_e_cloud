@@ -1,8 +1,5 @@
 # Manual Introdutório de Docker
 
-**Curso: Análise e Desenvolvimento de Sistemas**  
-**Professor: Ricardo**
-
 ---
 
 ## Sumário
@@ -43,11 +40,9 @@
         
 8. Como manter dados permanentes (Persistência de Dados)
     
-9. Exemplo de um Sistema Simples
+9. Boas práticas
     
-10. Boas práticas
-    
-11. Referências
+10. Referências
     
 
 ---
@@ -128,8 +123,8 @@ Comandos básicos:
 
 ```bash
 docker run hello-world             # Teste inicial
-docker ps                          # Contêiners em execução
-docker ps -a                       # Todos os contêiners
+docker ps                          # Contêners em execução
+docker ps -a                       # Todos os contêners
 docker images                      # Imagens disponíveis
 docker pull nome_da_imagem        # Baixar imagem
 docker stop id_ou_nome             # Parar contêiner
@@ -164,15 +159,15 @@ O `docker-compose.yml` permite orquestrar vários containers.
 ```yaml
 version: "3.8"
 services:
-  web:
-    build: .
-    ports:
-      - "5000:5000"
-  db:
-    image: mysql:8
-    environment:
-      MYSQL_ROOT_PASSWORD: senha
-      MYSQL_DATABASE: minha_app
+   web:
+      build: ../..
+      ports:
+         - "5000:5000"
+   db:
+      image: mysql:8
+      environment:
+         MYSQL_ROOT_PASSWORD: senha
+         MYSQL_DATABASE: minha_app
 ```
 
 Execute com:
@@ -310,82 +305,7 @@ volumes:
 
 ---
 
-## 9. Exemplo de um Sistema Simples
-
-### Objetivo:
-
-Criar uma aplicação de cadastro de tarefas com backend em Python (Flask) e banco de dados SQLite, usando Docker Compose.
-
-### Estrutura do Projeto:
-
-```
-meu_app/
-├── app.py
-├── requirements.txt
-├── Dockerfile
-├── docker-compose.yml
-```
-
-### app.py:
-
-```python
-from flask import Flask, request, jsonify
-app = Flask(__name__)
-tarefas = []
-
-@app.route('/tarefas', methods=['POST'])
-def adicionar():
-    tarefas.append(request.json)
-    return jsonify(tarefas)
-
-@app.route('/tarefas', methods=['GET'])
-def listar():
-    return jsonify(tarefas)
-
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
-```
-
-### requirements.txt:
-
-```
-flask
-```
-
-### Dockerfile:
-
-```Dockerfile
-FROM python:3.10
-WORKDIR /app
-COPY . .
-RUN pip install -r requirements.txt
-CMD ["python", "app.py"]
-```
-
-### docker-compose.yml:
-
-```yaml
-version: '3.8'
-services:
-  web:
-    build: .
-    ports:
-      - "5000:5000"
-    volumes:
-      - .:/app
-```
-
-### Executando:
-
-```bash
-docker-compose up
-```
-
-Acesse em `http://localhost:5000/tarefas`
-
----
-
-## 10. Boas Práticas
+## 9. Boas Práticas
 
 - Use `.dockerignore` para ignorar arquivos desnecessários
     
@@ -400,7 +320,7 @@ Acesse em `http://localhost:5000/tarefas`
 
 ---
 
-## 11. Referências
+## 10. Referências
 
 - [Documentação Oficial do Docker](https://docs.docker.com/)
     

@@ -164,15 +164,15 @@ O `docker-compose.yml` permite orquestrar vários containers.
 ```yaml
 version: "3.8"
 services:
-  web:
-    build: .
-    ports:
-      - "5000:5000"
-  db:
-    image: mysql:8
-    environment:
-      MYSQL_ROOT_PASSWORD: senha
-      MYSQL_DATABASE: minha_app
+   web:
+      build: ../..
+      ports:
+         - "5000:5000"
+   db:
+      image: mysql:8
+      environment:
+         MYSQL_ROOT_PASSWORD: senha
+         MYSQL_DATABASE: minha_app
 ```
 
 Execute com:
