@@ -24,8 +24,8 @@ Isso gerava o famoso **"Muro da Confusão"**, onde o Dev "jogava" o código por 
 
 ```mermaid
 graph LR
-    Dev[Desenvolvimento] -- "Joga o Código" --> Muro((Muro da Confusão))
-    Muro --> Ops[Operações]
+    Dev["Desenvolvimento"] -- "Joga o Código" --> Muro(["Muro da Confusão"])
+    Muro --> Ops["Operações"]
     
     style Muro fill:#f66,stroke:#333,stroke-width:4px
 ```
@@ -50,14 +50,14 @@ O DevOps se sustenta em três pilares fundamentais:
 ```mermaid
 graph LR
     subgraph "Dev"
-        Plan --> Code
-        Code --> Build
-        Build --> Test
+        Plan(["Planejar"]) --> Code(["Codar"])
+        Code(["Codar"]) --> Build(["Buildar"])
+        Build(["Buildar"]) --> Test(["Testar"])
     end
     subgraph "Ops"
-        Release --> Deploy
-        Deploy --> Operate
-        Operate --> Monitor
+        Release(["Release"]) --> Deploy(["Deploy"])
+        Deploy(["Deploy"]) --> Operate(["Operar"])
+        Operate(["Operar"]) --> Monitor(["Monitorar"])
     end
     Test --> Release
     Monitor --> Plan
@@ -83,6 +83,18 @@ Embora o DevOps seja cultura, as ferramentas são o que "lubrificam" as engrenag
 -   **Containers**: Docker, Kubernetes.
 -   **Cloud**: AWS, Azure, Google Cloud.
 -   **Monitoramento**: Prometheus, Grafana.
+
+### Exemplo de Fluxo (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">git push origin main</span>
+<span data-ty="progress"></span>
+<span data-ty="progress"></span>
+<span data-ty="cursor"></span>
+<span data-ty>Build in pipeline... OK</span>
+<span data-ty>Deploy to Cloud... OK</span>
+<span data-ty>Systems Online! 🚀</span>
+</div>
 
 ---
 

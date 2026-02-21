@@ -16,8 +16,32 @@ Na nuvem, a segurança é dividida entre você e o provedor (AWS/Azure/GCP):
 ## 2. O que é DevSecOps? 🛡️🔄
 
 É a evolução do DevOps. Significa integrar a segurança desde o primeiro dia do projeto.
-*   **Antes**: Desenvolve ➔ Testa ➔ Deploys ➔ Segurança (lento e perigoso).
 *   **Com DevSecOps**: Segurança está em cada commit, em cada build e em cada deploy.
+
+### O Ciclo DevSecOps
+
+```mermaid
+graph LR
+    Plan(["Plan"]) --> Code(["Code"])
+    Code --> Scan(["SAST/SCA"])
+    Scan --> Build(["Build"])
+    Build --> Test(["Test"])
+    Test --> Prod(["Release"])
+    Prod --> Monitor(["Monitor"])
+    Monitor --> Plan
+    style Scan fill:#f96,stroke:#333
+```
+
+### Verificação de Segurança (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">npm audit</span>
+<span data-ty>Scanning dependencies...</span>
+<span data-ty>Found 1 high severity vulnerability</span>
+<span data-ty="input">npm audit fix</span>
+<span data-ty>Fixed 1 vulnerability. 0 vulnerabilities remaining.</span>
+<span data-ty>Status: Código Seguro para Deploy! 🛡️</span>
+</div>
 
 ---
 

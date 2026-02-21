@@ -26,9 +26,34 @@ A Computação em Nuvem é a entrega de recursos de TI (processamento, armazenam
 
 A nuvem é dividida em três camadas principais:
 
-1.  **IaaS (Infraestrutura como Serviço)**: Você aluga o "ferro" (servidores virtuais, rede). Ex: AWS EC2, Azure VMs. Você cuida do SO e do App.
-2.  **PaaS (Plataforma como Serviço)**: Você foca apenas no código. A nuvem cuida do SO, do servidor web e do banco. Ex: Heroku, Google App Engine.
 3.  **SaaS (Software como Serviço)**: Você usa o software pronto via navegador. Ex: Gmail, Google Drive, Netflix.
+
+### Modelo de Responsabilidade Compartilhada
+
+```mermaid
+graph TD
+    subgraph SaaS["SaaS (Gmail/Netflix)"]
+        S1["Provedor cuida de TUDO"]
+    end
+    subgraph PaaS["PaaS (Heroku/App engine)"]
+        P1["Você cuida do APP"]
+        P2["Provedor cuida do RESTO"]
+    end
+    subgraph IaaS["IaaS (AWS EC2/Azure VM)"]
+        I1["Você cuida do APP e do SO"]
+        I2["Provedor cuida do HARDWARE"]
+    end
+```
+
+### Explorando a Nuvem (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">aws ec2 describe-instances --region us-east-1</span>
+<span data-ty>Fetching instances...</span>
+<span data-ty="progress"></span>
+<span data-ty>{ "Instances": [ { "InstanceId": "i-0987654321", "State": "running" } ] }</span>
+<span data-ty>Status: 1 servidor rodando na Virgínia! ☁️</span>
+</div>
 
 ---
 

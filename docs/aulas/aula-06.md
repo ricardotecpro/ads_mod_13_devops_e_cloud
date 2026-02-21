@@ -22,10 +22,23 @@ O CD começa onde o CI termina. Após a geração do artefato:
 
 ```mermaid
 graph LR
-    Artifact{Artefato} --> Staging[Ambiente de Homologação]
-    Staging --> Manual((Aprovação Humana))
-    Manual --> Prod[Ambiente de Produção]
+    Artifact(["Artefato"]) --> Staging(["Ambiente de Homologação"])
+    Staging --> Manual(["Aprovação Humana"])
+    Manual --> Prod(["Ambiente de Produção"])
 ```
+
+### Automação de CD (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">git push origin main</span>
+<span data-ty>Build... OK</span>
+<span data-ty>Testes... OK</span>
+<span data-ty>Aguardando aprovação para Produção...</span>
+<span data-ty="input">approve-deploy --env prod</span>
+<span data-ty>Deploying to AWS...</span>
+<span data-ty="progress"></span>
+<span data-ty>Status: Site Online! 🚀</span>
+</div>
 
 1.  **Staging (Homologação)**: Um ambiente idêntico ao real onde o time testa a nova versão.
 2.  **Testes de Aceitação**: Testes automatizados (end-to-end) que simulam o usuário final.

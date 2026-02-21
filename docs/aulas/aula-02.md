@@ -63,18 +63,27 @@ A entrega contínua é a capacidade de colocar alterações de qualquer tipo (no
 
 ```mermaid
 graph LR
-    subgraph "Agile (Planning)"
-        Backlog --> Sprint
-        Sprint --> Feature
+    subgraph "Ágil (Planejamento)"
+        Backlog(["Backlog"]) --> Sprint(["Sprint"])
+        Sprint(["Sprint"]) --> Feature(["Funcionalidade"])
     end
-    subgraph "DevOps (Delivery)"
-        Feature --> Build
-        Build --> Test
-        Test --> Deploy
+    subgraph "DevOps (Entrega)"
+        Feature --> Build(["Build"])
+        Build --> Test(["Teste"])
+        Test --> Deploy(["Deploy"])
     end
-    Deploy --> Feedback
+    Deploy --> Feedback(["Feedback"])
     Feedback --> Backlog
 ```
+
+### Automação Ágil (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">npm run sprint-check</span>
+<span data-ty>Verificando Backlog... OK</span>
+<span data-ty>Validando incrementos... OK</span>
+<span data-ty>Status: Pronto para Deploy! 🚀</span>
+</div>
 
 ---
 

@@ -2,6 +2,7 @@ site_name: DevOps e Cloud – Fundamentos Práticos
 site_url: https://ricardotecpro.github.io/ads_mod_13_devops_e_cloud
 repo_url: https://github.com/ricardotecpro/ads_mod_13_devops_e_cloud
 repo_name: ricardotecpro/ads_mod_13_devops_e_cloud
+
 theme:
   name: material
   language: pt-BR
@@ -15,25 +16,25 @@ theme:
     - navigation.top
     - navigation.footer
     - navigation.indexes
+    - navigation.sections
+    - navigation.path
     - toc.follow
     - content.code.copy
     - content.code.annotate
     - search.suggest
     - search.highlight
   palette:
-    # Light Mode (Default)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: light-blue
+      primary: teal
+      accent: amber
       toggle:
         icon: material/weather-sunny
         name: Mudar para modo escuro
-    # Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: light-blue
+      primary: teal
+      accent: amber
       toggle:
         icon: material/weather-night
         name: Mudar para modo claro
@@ -70,31 +71,20 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
-
 plugins:
   - mkdocs-revealjs:
       revealjs_config:
         transition: slide
         backgroundTransition: fade
         slideNumber: true
-
-  - search:
-      lang: pt
+  - search
+  - tags
+  - social
   - mkdocs-jupyter
   - glightbox
   - mkdocs_quiz
-  - git-authors:
-      show_contribution: true
-      show_line_count: true
-      count_empty_lines: false
-      fallback_to_empty: false
-      sort_authors_by: contribution
-      authorship_threshold_percent: 10
-      exclude:
-        - index.md
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: datetime
+  - git-authors
+  - git-revision-date-localized
   - macros
   - mkdocs-video
   - termynal:
@@ -104,15 +94,9 @@ plugins:
         - "$"
   - rss:
       match_path: .*
-      date_from_meta:
-        datetime_format: '%Y-%m-%d %H:%M:%S'
   - print-site:
       add_to_navigation: false
-      # print_page_rel_path: 'print_page.md' # Deprecated or invalid
       print_page_title: 'Versão para Impressão'
-      add_print_site_banner: false
-      enumerate_headings: false
-      enumerate_figures: false
 
 hooks:
   - hooks/copy_slides.py
@@ -125,7 +109,7 @@ extra_css:
 
 extra_javascript:
   - assets/js/quiz.js
-  - https://unpkg.com/mermaid@10.9.1/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@11.12.3/dist/mermaid.min.js
   - assets/js/mermaid-init.js
   - assets/js/custom_termynal.js
   - assets/js/mathjax.js
@@ -144,6 +128,7 @@ extra:
   version:
     provider: mike
     default: estavel
+  site_description: "Domine DevOps e Cloud com este curso modular, prático e focado no mercado de trabalho."
 
 nav:
   - Início: index.md
@@ -246,4 +231,3 @@ nav:
       - 'Roadmap': project_roadmap.md
       - 'Materiais Extras': materiais.md
   - Impressão: print_page.md
-

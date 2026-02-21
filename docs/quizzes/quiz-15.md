@@ -1,48 +1,104 @@
-# Quiz 15 - Projeto Prático Integrador 🏗️
+# Quiz 15 - Introdução
 
 --8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-question">1. Qual a principal vantagem de usar uma "Esteira de CI/CD" no projeto prático?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. CI/CD elimina o erro humano em tarefas repetitivas e garante que o código no ar seja o mesmo que foi testado.">Deixar o projeto mais lento para ter mais tempo de café</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! CI/CD automatiza o processo de build, teste e deploy, garantindo entregas mais rápidas e seguras.">Automatizar o processo desde o código até o deploy, reduzindo erros manuais</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. CI/CD elimina o erro humano em tarefas repetitivas e garante que o código no ar seja o mesmo que foi testado.">Economizar espaço no disco rígido do desenvolvedor</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. CI/CD elimina o erro humano em tarefas repetitivas e garante que o código no ar seja o mesmo que foi testado.">A esteira serve apenas para exercício escolar</div>
+  <div class="quiz-question">1. O que é uma SPA (Single Page Application)?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um site que só funciona em um navegador</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Uma aplicação onde o HTML é carregado uma única vez e o Javascript troca o conteúdo da tela">Uma aplicação onde o HTML é carregado uma única vez e o Javascript troca o conteúdo da tela</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um site que não tem Javascript</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um aplicativo de celular que não usa internet
+    *Explicação: SPAs oferecem uma experiência fluida, parecida com um app nativo, sem recarregamentos de página.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">2. Por que devemos usar Terraform para criar a infraestrutura do projeto em vez de criar manualmente no portal da Cloud?</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Com IaC (Terraform), sua infraestrutura é documentada, versionada e pode ser replicada em segundos sem erro humano.">Porque permite que a infraestrutura seja versionada (Git) e recriada rapidamente de forma idêntica</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Com IaC (Terraform), sua infraestrutura é documentada, versionada e pode ser replicada em segundos sem erro humano.">Porque o portal da Cloud é proibido para profissionais</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Com IaC (Terraform), sua infraestrutura é documentada, versionada e pode ser replicada em segundos sem erro humano.">Porque o Terraform é gratuito e a Cloud não</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Com IaC (Terraform), sua infraestrutura é documentada, versionada e pode ser replicada em segundos sem erro humano.">Não há diferença entre criar manual ou via código</div>
+  <div class="quiz-question">2. Qual componente é obrigatório para envolver toda a aplicação que usará rotas?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><Route></div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><Link></div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! <BrowserRouter>"><BrowserRouter></div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><RouterManager>
+    *Explicação: Ele é o "contexto" que permite ao React monitorar a URL do navegador.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">3. Onde você deve guardar as senhas do banco de dados para que o GitHub Actions possa usá-las?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Nunca coloque senhas no código. Use o cofre de segredos do GitHub (Secrets).">Dentro do arquivo README.md</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O GitHub Secrets criptografa esses dados e os injeta de forma segura apenas durante a execução da automação.">No GitHub Secrets (Configurações do Repositório)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Nunca coloque senhas no código. Use o cofre de segredos do GitHub (Secrets).">Comentadas no código fonte da aplicação</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Nunca coloque senhas no código. Use o cofre de segredos do GitHub (Secrets).">Em um arquivo chamado `senhas.txt` na raiz do projeto</div>
+  <div class="quiz-question">3. Como definimos uma rota específica para a página de contato?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><Route url="/contato" component={Contato} /></div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! <Route path="/contato" element={<Contato />} />"><Route path="/contato" element={<Contato />} /></div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><Link to="/contato" /></div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><a href="/contato">
+    *Explicação: No React Router v6, usamos os atributos `path` e `element`.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">4. O que significa "Dockerizar" sua aplicação no contexto do projeto integrador?</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O Docker garante que a aplicação rode igual no seu PC, no CI e na Cloud.">Empacotar a aplicação e suas dependências em um container para que rode em qualquer lugar</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O Docker garante que a aplicação rode igual no seu PC, no CI e na Cloud.">Colocar o logo de uma baleia no site</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O Docker garante que a aplicação rode igual no seu PC, no CI e na Cloud.">Deletar a aplicação e usar uma pronta do Docker Hub</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O Docker garante que a aplicação rode igual no seu PC, no CI e na Cloud.">Transformar o código em uma imagem JPEG</div>
+  <div class="quiz-question">4. Por que não devemos usar a tag `<a>` para navegar entre rotas no React?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque ela é proibida pelo Google</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque ela gasta mais bateria</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Porque ela causa um recarregamento total da página, perdendo o estado do React">Porque ela causa um recarregamento total da página, perdendo o estado do React</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque ela não aceita CSS
+    *Explicação: O componente `<Link>` intercepta o clique para manter a troca de telas interna.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">5. Qual a função do arquivo `Dockerfile` no projeto?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O Dockerfile é a 'receita de bolo' que o Docker usa para montar o ambiente da sua aplicação.">Guardar a lista de compras do time</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Ele contém todas as instruções passo-a-passo para criar a imagem da aplicação.">Servir como a "receita" com as instruções para montar a imagem do container</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O Dockerfile é a 'receita de bolo' que o Docker usa para montar o ambiente da sua aplicação.">É onde o Terraform lê as configurações de nuvem</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O Dockerfile é a 'receita de bolo' que o Docker usa para montar o ambiente da sua aplicação.">Substituir o arquivo `index.html` do site</div>
+  <div class="quiz-question">5. Para que serve o caractere `*` no atributo `path`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para indicar uma rota secreta</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Como um "coringa" para capturar qualquer URL que não foi definida anteriormente (Página 404)">Como um "coringa" para capturar qualquer URL que não foi definida anteriormente (Página 404)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para multiplicar o número de páginas</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para aceitar qualquer tipo de arquivo
+    *Explicação: É a forma padrão de lidar com links inexistentes.*</div>
   <div class="quiz-feedback"></div>
 </div>
+
+<div class="quiz-container">
+  <div class="quiz-question">6. Qual hook usamos para capturar parâmetros da URL (ex: o ID em `/post/10`)?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">useID()</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">useRoute()</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! useParams()">useParams()</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">useQuery()
+    *Explicação: Os parâmetros definidos com `:` na rota são extraídos por este hook.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">7. Como redirecionamos o usuário para a Home após ele clicar em um botão de "Sair"?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">window.location.href = "/"</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! const navigate = useNavigate(); navigate("/");">const navigate = useNavigate(); navigate("/");</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><Link to="/" /></div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">useRoute("/")
+    *Explicação: O hook `useNavigate` permite navegação via lógica de programação.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">8. O que acontece se removermos o componente `<Routes>` e deixarmos apenas os `<Route>`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O app continua funcionando</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O React Router gerará um erro, pois os Route precisam estar dentro de um provedor de rotas">O React Router gerará um erro, pois os Route precisam estar dentro de um provedor de rotas</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O site fica mais lento</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O menu desaparece
+    *Explicação: `<Routes>` é o componente que escolhe qual rota renderizar baseada na URL atual.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">9. Em qual pacote extra encontramos as ferramentas de roteamento do React?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">react-dom</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">react-router</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! react-router-dom">react-router-dom</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">vite-plugin-router
+    *Explicação: O `react-router-dom` é a versão específica para navegadores web.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">10. Como definimos um parâmetro dinâmico chamado `slug` na URL?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">path="/blog/slug"</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! path="/blog/:slug"">path="/blog/:slug"</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">path="/blog/{slug}"</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">path="/blog/*slug"
+    *Explicação: O uso dos dois pontos (`:`) sinaliza que aquela parte da URL é uma variável.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+

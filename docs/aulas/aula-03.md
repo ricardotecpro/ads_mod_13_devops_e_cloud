@@ -28,9 +28,9 @@ O Git trabalha com três áreas principais:
 
 ```mermaid
 graph LR
-    WD[Working Directory] -- "git add" --> SA[Staging Area]
-    SA -- "git commit" --> RP[Local Repository]
-    RP -- "git push" --> Remote[Remote Repository]
+    WD(["Working Directory"]) -- "git add" --> SA(["Staging Area"])
+    SA -- "git commit" --> RP(["Local Repository"])
+    RP -- "git push" --> Remote(["Remote Repository"])
 ```
 
 ---
@@ -39,26 +39,17 @@ graph LR
 
 Abra seu terminal e prepare-se para usar os comandos sagrados:
 
-### Iniciando um Projeto
-```termynal
-$ git init
-# Inicia um repositório Git na pasta atual.
-```
+### Comandos de Fluxo (Termynal) 💻
 
-### Verificando o Status
-```termynal
-$ git status
-# Diz quem foi modificado e quem está pronto para o commit.
-```
-
-### Preparando e Salvando
-```termynal
-$ git add arquivo.txt
-# Move o arquivo para a Staging Area (pode usar 'git add .' para todos).
-
-$ git commit -m "Explicação clara do que foi mudado"
-# Salva a alteração com uma mensagem.
-```
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">git init</span>
+<span data-ty>Initialized empty Git repository...</span>
+<span data-ty="input">git add .</span>
+<span data-ty="input">git commit -m "Meu primeiro commit"</span>
+<span data-ty>[main (root-commit) 1a2b3c4] Meu primeiro commit</span>
+<span data-ty="input">git status</span>
+<span data-ty>nothing to commit, working tree clean</span>
+</div>
 
 ---
 

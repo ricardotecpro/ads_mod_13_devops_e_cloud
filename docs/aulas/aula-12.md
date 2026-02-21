@@ -19,6 +19,27 @@ Com **IaC**, nós escrevemos um arquivo de texto (código) que descreve como a i
 *   **Padronização**: Garante que o ambiente de Teste seja **exatamente igual** ao de Produção.
 *   **Recuperação**: Se um datacenter inteiro pegar fogo, você roda o código e recria tudo em outro lugar em minutos.
 
+### O Poder da IaC
+
+```mermaid
+graph LR
+    Code(["Código .tf"]) -- "Terraform Init" --> Providers(["Provedores"])
+    Providers -- "Terraform Plan" --> Review(["Revisão"])
+    Review -- "Terraform Apply" --> Infrastructure(["Infraestrutura Real"])
+```
+
+### Terraform na Prática (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">terraform plan</span>
+<span data-ty>Terraform will perform the following actions:</span>
+<span data-ty>  + aws_instance.web_server</span>
+<span data-ty>Plan: 1 to add, 0 to change, 0 to destroy.</span>
+<span data-ty="input">terraform apply --auto-approve</span>
+<span data-ty>aws_instance.web_server: Creating...</span>
+<span data-ty>aws_instance.web_server: Creation complete! ✅</span>
+</div>
+
 ---
 
 ## 3. Imperativo vs Declarativo ⚖️

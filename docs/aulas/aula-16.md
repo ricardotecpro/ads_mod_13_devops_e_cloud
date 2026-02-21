@@ -16,9 +16,34 @@ A demanda por profissionais que entendem de automação e nuvem nunca foi tão a
 
 ## 2. O Perfil do Profissional T-Shaped 📐
 
-Um bom profissional DevOps deve ter o perfil "T":
-*   **Horizontal (Generalista)**: Conhecimento básico em Linux, Redes, Segurança e Desenvolvimento.
 *   **Vertical (Especialista)**: Domínio profundo em uma área específica (ex: Especialista em Kubernetes ou AWS).
+
+### O Profissional T-Shaped
+
+```mermaid
+graph TD
+    subgraph Horizontal["Conhecimento Amplo"]
+        A(["Linux"]) --- B(["Redes"])
+        B --- C(["Segurança"])
+        C --- D(["Dev"])
+    end
+    D --- E(["Cloud & Automação"])
+    E --- F(["Especialista"])
+    style E fill:#f9f,stroke:#333
+```
+
+### Explorando o Mercado (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">devops-jobs --search "remoto"</span>
+<span data-ty>Searching LinkedIn, Glassdoor, Indeed...</span>
+<span data-ty>Found: 1,250 open positions for DevOps Engineer</span>
+<span data-ty>Skills required: Docker, K8s, Terraform, AWS</span>
+<span data-ty></span>
+<span data-ty>Ready to apply? [Y/n]</span>
+<span data-ty="input">Y</span>
+<span data-ty>Boa sorte na sua jornada! 🚀🎯</span>
+</div>
 
 ---
 

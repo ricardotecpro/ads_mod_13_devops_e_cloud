@@ -1,6 +1,6 @@
 # Materiais Complementares 📚
 
-Bem-vindo à seção de materiais complementares do curso de **APIs e Microsserviços**. Aqui você encontra recursos adicionais para apoiar seus estudos e aprofundar seu conhecimento técnico.
+Bem-vindo à seção de materiais complementares do curso de **DevOps e Cloud**. Aqui você encontra recursos adicionais para apoiar seus estudos e aprofundar seu conhecimento técnico.
 
 <div class="grid cards" markdown>
 
@@ -16,7 +16,7 @@ Bem-vindo à seção de materiais complementares do curso de **APIs e Microsserv
 -   :material-rocket: [**Projetos**](projetos/index.md)
     -   Construa um ecossistema completo para seu portfólio.
 
--   :material-cog: [**Ambiente**](setups/index.md)
+-   :material-cog: [**Ambiente**](setup/index.md)
     -   Guias de instalação (Docker, IDEs, Postman).
 
 </div>

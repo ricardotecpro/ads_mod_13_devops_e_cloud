@@ -50,12 +50,25 @@ O Git Flow é uma estratégia de organização de branches. Para iniciantes, usa
 
 ```mermaid
 graph LR
-    Main((main)) --- Develop((develop))
-    Develop --- F1((feature/A))
-    Develop --- F2((feature/B))
+    Main(["main"]) --- Develop(["develop"])
+    Develop --- F1(["feature/A"])
+    Develop --- F2(["feature/B"])
     F1 -- "PR" --> Develop
     Develop -- "Release" --> Main
 ```
+
+### Comandos de Sincronização (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">git remote add origin https://github.com/usuario/repo.git</span>
+<span data-ty="input">git push -u origin main</span>
+<span data-ty>Enumerating objects: 5, done.</span>
+<span data-ty>Counting objects: 100% (5/5), done.</span>
+<span data-ty>Writing objects: 100% (5/5), 450 bytes | 450.00 KiB/s, done.</span>
+<span data-ty>To https://github.com/usuario/repo.git</span>
+<span data-ty> * [new branch]      main -> main</span>
+<span data-ty>branch 'main' set up to track 'origin/main'.</span>
+</div>
 
 ---
 

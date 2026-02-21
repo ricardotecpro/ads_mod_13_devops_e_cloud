@@ -17,11 +17,24 @@ Quando usamos Docker, o deploy fica muito mais seguro e previsível:
 
 ```mermaid
 graph LR
-    Dev[Desenvolvedor] -->|Push| Repo[GitHub]
-    Repo -->|Build| Image[Imagem Docker]
-    Image -->|Push| Registry[Docker Hub / ECR]
-    Registry -->|Pull| Cloud[Servidor na Nuvem]
+    Dev(["Desenvolvedor"]) -->|Push| Repo(["GitHub"])
+    Repo -->|Build| Image(["Imagem Docker"])
+    Image -->|Push| Registry(["Registry"])
+    Registry -->|Pull| Cloud(["Cloud"])
 ```
+
+### Simulação de Deploy (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">docker build -t app:v1 .</span>
+<span data-ty>Building image... Done</span>
+<span data-ty="input">docker push registry.com/app:v1</span>
+<span data-ty>Pushing [==========>] 100MB/100MB</span>
+<span data-ty="input">deploy-to-cloud --image app:v1</span>
+<span data-ty>Pulling image... OK</span>
+<span data-ty>Starting container... OK</span>
+<span data-ty>Status: Aplicação no Ar! 🚀</span>
+</div>
 
 1.  **Build**: Criamos a imagem da aplicação.
 2.  **Push**: Enviamos a imagem para um "cartório" de imagens (Registry).

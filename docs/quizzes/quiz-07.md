@@ -1,49 +1,104 @@
-# Quiz 07 - Containers e Virtualização 🐳
+# Quiz 07 - Introdução
 
 --8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-question">1. Qual a principal diferença entre um Container e uma Máquina Virtual (VM)?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Containers compartilham o Kernel do sistema operacional, o que os torna muito mais leves e rápidos que as VMs.">Containers são mais pesados que as VMs</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Containers compartilham o Kernel do Host e são muito mais leves, enquanto VMs rodam um SO completo.">Containers compartilham o Kernel do sistema operacional hospedeiro, enquanto as VMs rodam um sistema operacional completo</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Containers compartilham o Kernel do sistema operacional, o que os torna muito mais leves e rápidos que as VMs.">VMs não precisam de hardware para rodar</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Containers compartilham o Kernel do sistema operacional, o que os torna muito mais leves e rápidos que as VMs.">Não há diferença técnica entre eles</div>
+  <div class="quiz-question">1. Qual a função do PostgreSQL em uma arquitetura backend?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Criar a interface visual</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Armazenar dados de forma persistente e relacional">Armazenar dados de forma persistente e relacional</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Enviar e-mails automaticamente</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Compilar o código Javascript
+    *Explicação: O PostgreSQL é um Sistema de Gerenciamento de Banco de Dados (SGBD) que garante que os dados não se percam.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">2. O que significa dizer que um container é "Isolado"?</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O isolamento garante que o que acontece em um container não afeta outro, nem o sistema hospedeiro.">Significa que ele roda em um ambiente separado, sem interferir em outros containers ou no sistema operacional hospedeiro</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O isolamento garante que o que acontece em um container não afeta outro, nem o sistema hospedeiro.">Significa que ele não pode se conectar à internet</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O isolamento garante que o que acontece em um container não afeta outro, nem o sistema hospedeiro.">Significa que ele só pode ser acessado por uma pessoa por vez</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O isolamento garante que o que acontece em um container não afeta outro, nem o sistema hospedeiro.">Significa que ele apaga todos os arquivos após ser desligado</div>
+  <div class="quiz-question">2. O que significa a sigla CRUD?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Create, Remove, Update, Delete</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Create, Read, Update, Delete">Create, Read, Update, Delete</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Clear, Read, Unit, Deploy</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Code, Run, Update, Debug
+    *Explicação: CRUD representa as quatro operações básicas de manipulação de dados em qualquer sistema.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">3. Qual o problema que os containers resolvem de forma mais eficaz?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. A padronização do ambiente garante que "se funciona na minha máquina, funciona em qualquer lugar".">O preço alto dos computadores</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! A padronização do ambiente resolve o problema de incompatibilidade entre diferentes máquinas.">O problema de o software funcionar na máquina do desenvolvedor, mas não no servidor ("Na minha máquina funciona")</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. A padronização do ambiente garante que "se funciona na minha máquina, funciona em qualquer lugar".">A velocidade da digitação dos programadores</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. A padronização do ambiente garante que "se funciona na minha máquina, funciona em qualquer lugar".">A falta de criatividade no design de sites</div>
+  <div class="quiz-question">3. Qual o comando SQL usado para buscar dados em uma tabela?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">INSERT</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">UPDATE</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! SELECT">SELECT</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">DELETE
+    *Explicação: O SELECT é o comando fundamental para realizar consultas no banco de dados.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">4. O que é uma "Imagem" no contexto de containers?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. A imagem é o "projeto" estático, o container é esse projeto em execução.">Uma foto da tela do computador</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! A imagem é um pacote imutável que contém tudo o que é necessário para rodar a aplicação.">Um arquivo estático (template) que contém o código, bibliotecas e dependências da aplicação</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. A imagem é o "projeto" estático, o container é esse projeto em execução.">O logotipo que aparece no ícone do container</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. A imagem é o "projeto" estático, o container é esse projeto em execução.">O manual de instruções impresso do software</div>
+  <div class="quiz-question">4. Para que serve o padrão Repository?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para salvar arquivos PDF no servidor</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Para isolar a lógica de acesso ao banco da lógica de negócio">Para isolar a lógica de acesso ao banco da lógica de negócio</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para criar rotas no Express</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para acelerar o download do app
+    *Explicação: O Repository centraliza as chamadas ao banco, facilitando a troca de tecnologia sem afetar o resto do sistema.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">5. Qual a vantagem de usar containers em arquiteturas de Microserviços?</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Containers permitem escalar e atualizar cada microserviço de forma independente e rápida.">Permite escalar e atualizar partes específicas da aplicação de forma independente e rápida</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Containers permitem escalar e atualizar cada microserviço de forma independente e rápida.">Faz com que todos os microserviços falem a mesma língua obrigatoriamente</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Containers permitem escalar e atualizar cada microserviço de forma independente e rápida.">Impede que o sistema tenha mais de 10 funções</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Containers permitem escalar e atualizar cada microserviço de forma independente e rápida.">Diminui a segurança do sistema para facilitar o acesso do desenvolvedor</div>
+  <div class="quiz-question">5. O que é uma Primary Key (Chave Primária)?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">A senha master do servidor</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Um identificador único para cada registro (linha) em uma tabela">Um identificador único para cada registro (linha) em uma tabela</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O nome da tabela principal</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O primeiro campo de um formulário HTML
+    *Explicação: A PK garante que não existam dois registros idênticos e facilita a busca rápida.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">6. Quando usamos uma Foreign Key (Chave Estrangeira)?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para traduzir o banco de dados</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Para criar um link (relacionamento) entre duas tabelas diferentes">Para criar um link (relacionamento) entre duas tabelas diferentes</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para encriptar os dados</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para mudar o nome das colunas
+    *Explicação: A FK é o que permite conectar, por exemplo, um Pedido ao Usuário que o realizou.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">7. O que acontece se rodarmos um `DELETE FROM usuarios` sem a cláusula `WHERE`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O banco pede confirmação</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Todos os registros da tabela "usuarios" serão apagados!">Todos os registros da tabela "usuarios" serão apagados!</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apenas o primeiro registro é apagado</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O comando dá erro de sintaxe
+    *Explicação: Sem o WHERE, o comando afeta todas as linhas da tabela. Muito cuidado!*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">8. O que são "Migrations"?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Pessoas que mudam de país</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Arquivos que versionam a estrutura do banco de dados (schema)">Arquivos que versionam a estrutura do banco de dados (schema)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">A troca de servidor de hospedagem</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um tipo de loop em Javascript
+    *Explicação: Migrations garantem que todos os desenvolvedores tenham a mesma versão da estrutura do banco.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">9. Qual o tipo de relacionamento quando um Autor pode escrever vários livros?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">1:1 (Um para um)</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! 1:N (Um para muitos)">1:N (Um para muitos)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">N:N (Muitos para muitos)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">N:1 (Muitos para um)
+    *Explicação: Um único recurso pai (Autor) está ligado a múltiplos recursos filhos (Livros).*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">10. Por que o Service deve chamar o Repository em vez de rodar SQL direto?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para o código ficar mais longo</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Para seguir o princípio de responsabilidade única e facilitar testes">Para seguir o princípio de responsabilidade única e facilitar testes</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque SQL é uma linguagem antiga</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque o computador processa Services mais rápido
+    *Explicação: Separar as camadas torna o sistema modular: o Service dita O QUE fazer, o Repository sabe COMO buscar.*</div>
   <div class="quiz-feedback"></div>
 </div>
 

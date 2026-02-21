@@ -9,6 +9,14 @@
 
 Embora existam dezenas de empresas de nuvem, o mercado é dominado pelo "Big Three": AWS, Microsoft Azure e Google Cloud.
 
+```mermaid
+pie title Market Share Cloud (Estimativa 2024)
+    "AWS" : 31
+    "Azure" : 25
+    "Google Cloud" : 11
+    "Outros" : 33
+```
+
 ---
 
 ## 2. AWS (Amazon Web Services) 🟠
@@ -55,6 +63,16 @@ Conhecida pela sua excelência em ferramentas de **Dados, Inteligência Artifici
 1.  **Conhecimento Técnico**: Sua equipe já conhece alguma? Comece por ela.
 2.  **Tecnologia**: Usa .NET? Vá de Azure. Usa Docker/K8s pesado? Considere GCP. Precisa de tudo e mais um pouco? AWS.
 3.  **Localização**: Onde estão seus usuários? Escolha o servidor mais próximo deles (Brasil tem regiões de todas as 3).
+
+### Verificando Latência (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">ping sa-east-1.amazonaws.com</span>
+<span data-ty>64 bytes from ... icmp_seq=1 ttl=245 time=15.2 ms</span>
+<span data-ty>64 bytes from ... icmp_seq=2 ttl=245 time=14.8 ms</span>
+<span data-ty></span>
+<span data-ty>Região: São Paulo (Baixa Latência) ✅</span>
+</div>
 
 ---
 

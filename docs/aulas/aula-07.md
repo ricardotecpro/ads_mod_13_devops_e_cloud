@@ -24,6 +24,34 @@ Antigamente, usávamos VMs para isolar aplicações. Mas as VMs são pesadas.
 | **Isolamento** | Completo (Hardware virtual) | Processos isolados no SO |
 | **Sistema Operacional** | Possui um SO completo dentro | Compartilha o Kernel do Host |
 
+### Estrutura de Container vs VM
+
+```mermaid
+graph TD
+    subgraph VM["Máquina Virtual (VM)"]
+        APP1["App"] --> LIB1["Biliotecas"]
+        LIB1 --> OS1["SO Convidado"]
+        OS1 --> HYP["Hipervisor"]
+    end
+    subgraph CT["Container (Docker)"]
+        APP2["App"] --> LIB2["Bibliotecas"]
+        LIB2 --> DE["Docker Engine"]
+        DE --> OS2["SO Host (Kernel)"]
+    end
+```
+
+### Rodando seu primeiro Container (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">docker run hello-world</span>
+<span data-ty>Unable to find image 'hello-world:latest' locally</span>
+<span data-ty>latest: Pulling from library/hello-world</span>
+<span data-ty>Digest: sha256:d37adae...</span>
+<span data-ty>Status: Downloaded newer image for hello-world:latest</span>
+<span data-ty></span>
+<span data-ty>Hello from Docker! 🐳</span>
+</div>
+
 ---
 
 ## 3. O que é um Container? 📦

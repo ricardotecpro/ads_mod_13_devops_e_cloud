@@ -9,11 +9,31 @@
 
 Ao longo do curso, vimos as peças separadas. Agora, vamos montar o quebra-cabeça. O objetivo é criar o fluxo completo desde o seu computador até a nuvem:
 
-1.  **Código**: Uma aplicação simples (Node.js/Python).
-2.  **Container**: Dockerizar a aplicação.
-3.  **CI/CD**: Automação via GitHub Actions.
-4.  **Infra**: Provisionar o banco e o servidor via Terraform.
 5.  **Monitoramento**: Validar se os logs e métricas estão subindo.
+
+### A Jornada do Projeto
+
+```mermaid
+graph TD
+    APP(["APP Local"]) -- "Dockerize" --> IMG(["Imagem"])
+    IMG -- "Git Push" --> GH(["GitHub Actions"])
+    GH -- "Terraform" --> INFRA(["Cloud Infra"])
+    GH -- "Deploy" --> RUN(["App no Ar"])
+    RUN -- "Metrics" --> MON(["Grafana"])
+```
+
+### Orquestrando o Lab Final (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">git push origin main</span>
+<span data-ty>Triggering Integration...</span>
+<span data-ty="progress"></span>
+<span data-ty>Terraform apply: Done (12 resources)</span>
+<span data-ty>Docker push: Done (v1.0.0)</span>
+<span data-ty>Cloud Run deploy: Done</span>
+<span data-ty></span>
+<span data-ty>Link: https://projeto-final.a.run.app 🚀</span>
+</div>
 
 ---
 

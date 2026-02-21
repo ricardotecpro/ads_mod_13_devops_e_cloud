@@ -22,12 +22,24 @@ Um pipeline de CI geralmente segue este fluxo:
 
 ```mermaid
 graph LR
-    Code((Código)) --> Commit[Commit/Push]
-    Commit --> Build[Build/Compilação]
-    Build --> Unit[Testes Unitários]
-    Unit --> Static[Análise Estática]
-    Static --> Artifact{Artefato Gerado}
+    Code(["Código"]) --> Commit(["Commit/Push"])
+    Commit --> Build(["Build/Compilação"])
+    Build --> Unit(["Testes Unitários"])
+    Unit --> Static(["Análise Estática"])
+    Static --> Artifact(["Artefato Gerado"])
 ```
+
+### Automação de CI (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">git push origin develop</span>
+<span data-ty>Iniciando Pipeline...</span>
+<span data-ty="progress"></span>
+<span data-ty>Rodando Pytest... [PASSED]</span>
+<span data-ty>Análise de Lint... [SUCCESS]</span>
+<span data-ty>Geração de Imagem: v1.0.5</span>
+<span data-ty>Status: Pipeline Completo! ✅</span>
+</div>
 
 1.  **Commit/Push**: O gatilho que inicia o processo.
 2.  **Build**: O servidor baixa as dependências e o código é transformado em algo executável (se necessário).

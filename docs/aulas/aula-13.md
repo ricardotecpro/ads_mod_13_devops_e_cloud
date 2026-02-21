@@ -24,9 +24,28 @@ No mundo DevOps, não perguntamos *se* algo vai falhar, mas *quando*. O monitora
 
 ## 3. Os 3 Pilares da Observabilidade 🏛️
 
-1.  **Métricas**: Números agregados ao longo do tempo (ex: Uso de CPU, Requisições por Segundo). Ferramentas: **Prometheus**, **Grafana**.
-2.  **Logs**: Registros detalhados de eventos (ex: "Usuário X clicou no botão Y às 10:00"). Ferramentas: **ELK Stack (Elasticsearch, Logstash, Kibana)**, **CloudWatch**.
 3.  **Tracing**: O caminho de uma requisição por vários microserviços. Ferramentas: **Jaeger**, **AWS X-Ray**.
+
+### Fluxo de Observabilidade
+
+```mermaid
+graph LR
+    APP(["Aplicação"]) -- "Eventos" --> LOGS(["Logs (ELK)"])
+    APP -- "Sinais" --> MET(["Métricas (Prometheus)"])
+    MET -- "Visualização" --> GRAV(["Grafana"])
+    GRAV -- "Critério" --> ALERT(["Alert Manager"])
+```
+
+### Investigando Métricas (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">prometheus-query 'up{job="web-server"}'</span>
+<span data-ty>Métrica: up (status do servidor)</span>
+<span data-ty>Valor: 1 (Online)</span>
+<span data-ty="input">prometheus-query 'http_requests_total{status="500"}'</span>
+<span data-ty>Valor: 42 (Atenção: Aumento de erros!)</span>
+<span data-ty>Status: Alerta enviado para o Grafana! 🚨</span>
+</div>
 
 ---
 

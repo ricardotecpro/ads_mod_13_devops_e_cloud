@@ -37,4 +37,5 @@
 *   **Exercícios**: 16 listas de exercícios teóricos e práticos.
 *   **Projetos**: 16 mini-projetos de fixação.
 *   **Quizzes**: 16 testes de conhecimento imediato.
+*   **Setup**: [Guia de configuração do ambiente](setup/index.md).
 *   **Projeto Final**: Implementação de um pipeline completo com containerização e deploy em nuvem.

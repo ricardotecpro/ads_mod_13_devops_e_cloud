@@ -18,12 +18,29 @@ docker --version
 
 ## 2. Comandos Básicos do Dia a Dia ⌨️
 
-*   `docker pull <imagem>`: Baixa uma imagem do Docker Hub (ex: `nginx`).
-*   `docker run <imagem>`: Cria e inicia um container a partir de uma imagem.
-*   `docker ps`: Lista os containers que estão rodando agora.
-*   `docker stop <id>`: Para a execução de um container.
-*   `docker rm <id>`: Apaga um container parado.
 *   `docker images`: Lista as imagens que você tem baixadas no PC.
+
+### Ciclo de Comandos Docker
+
+```mermaid
+graph LR
+    DF(["Dockerfile"]) -- "docker build" --> IMG(["Imagem"])
+    IMG -- "docker run" --> CT(["Container"])
+    CT -- "docker stop" --> ST(["Parado"])
+    ST -- "docker rm" --> RM(["Removido"])
+```
+
+### Prática: Build e Run (Termynal) 💻
+
+<div id="termynal" data-termynal markdown>
+<span data-ty="input">docker build -t meu-site .</span>
+<span data-ty>Sending build context... OK</span>
+<span data-ty>Step 1/3 : FROM nginx:alpine...</span>
+<span data-ty>Successfully tagged meu-site:latest</span>
+<span data-ty="input">docker run -d -p 8080:80 meu-site</span>
+<span data-ty>f1a2b3c4d5e6...</span>
+<span data-ty>Status: Container rodando em localhost:8080! 🚀</span>
+</div>
 
 ---
 

@@ -1,48 +1,104 @@
-# Quiz 16 - Mercado, Carreira e Próximos Passos 🚀
+# Quiz 16 - Introdução
 
 --8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-question">1. O que significa ser um profissional "T-Shaped" na área de DevOps?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O perfil T combina amplitude (conhecer várias áreas) com profundidade (ser especialista em uma).">Ser um profissional que trabalha apenas em formato de "T"</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Significa ter uma base ampla de conhecimentos gerais e uma especialização profunda em uma área técnica.">Ter conhecimentos gerais amplos e uma especialização profunda em uma área específica</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O perfil T combina amplitude (conhecer várias áreas) com profundidade (ser especialista em uma).">Ser um especialista que não sabe nada sobre outras áreas do TI</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O perfil T combina amplitude (conhecer várias áreas) com profundidade (ser especialista em uma).">É um tipo de certificação da Microsoft</div>
+  <div class="quiz-question">1. Qual o principal objetivo do "Trabalho de Conclusão de Curso (TCC)" no TecPro?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ganhar um prêmio em dinheiro</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Consolidar o aprendizado em um projeto Full-Stack real para servir de portfólio para o mercado">Consolidar o aprendizado em um projeto Full-Stack real para servir de portfólio para o mercado</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Escrever o código mais longo do mundo</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Criar um site que não use internet
+    *Explicação: O projeto final prova que você sabe conectar o Frontend ao Backend com segurança.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">2. Qual dessas ferramentas é considerada o próximo passo natural para quem já domina Docker e quer orquestrar grandes sistemas?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Kubernetes é o orquestrador de containers mais usado no mundo atualmente.">Bloco de Notas</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O Kubernetes (K8s) gerencia clusters de containers em larga escala.">Kubernetes (K8s)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Kubernetes é o orquestrador de containers mais usado no mundo atualmente.">Windows Movie Maker</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Kubernetes é o orquestrador de containers mais usado no mundo atualmente.">jQuery</div>
+  <div class="quiz-question">2. Por que o `README.md` no seu GitHub é considerado seu "Cartão de Visitas"?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque ele tem as cores da sua empresa</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Porque é a primeira coisa que um recrutador ou tech lead olha para entender seu projeto">Porque é a primeira coisa que um recrutador ou tech lead olha para entender seu projeto</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque ele apaga o resto do código</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque o GitHub cobra se você não tiver um
+    *Explicação: Um bom README com prints e tecnologias demonstra profissionalismo e clareza.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">3. Qual a melhor maneira de demonstrar seus conhecimentos DevOps para recrutadores?</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Mostrar projetos reais, com código organizado e README bem escrito, prova que você sabe aplicar a teoria.">Manter um GitHub atualizado com projetos práticos, automações e documentação clara</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Mostrar projetos reais, com código organizado e README bem escrito, prova que você sabe aplicar a teoria.">Ter apenas o diploma da faculdade guardado na gaveta</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Mostrar projetos reais, com código organizado e README bem escrito, prova que você sabe aplicar a teoria.">Dizer que sabe tudo sem mostrar nenhum código</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. Mostrar projetos reais, com código organizado e README bem escrito, prova que você sabe aplicar a teoria.">Postar fotos dos servidores bonitos no Instagram</div>
+  <div class="quiz-question">3. Como você pode tornar seu projeto "impecável" para o mercado?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Colocando o máximo de animações possível, mesmo que trave</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Usando rotas seguras, código limpo, tratamento de erros e um design organizado">Usando rotas seguras, código limpo, tratamento de erros e um design organizado</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Cobrando caro para as pessoas verem o código</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Copiando o código de outro site sem mudar nada
+    *Explicação: Qualidade técnica e atenção aos detalhes são o que diferenciam um júnior de um pleno.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">4. O que é o SRE (Site Reliability Engineering)?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. SRE é a disciplina que aplica práticas de engenharia de software em problemas de operações de TI.">Um tipo de processador da Intel</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Criado pelo Google, o SRE foca em tornar os sistemas escaláveis, confiáveis e eficientes através de engenharia.">Uma disciplina que aplica práticas de engenharia de software para resolver problemas de operações e infraestrutura</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. SRE é a disciplina que aplica práticas de engenharia de software em problemas de operações de TI.">O manual de ética do programador</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. SRE é a disciplina que aplica práticas de engenharia de software em problemas de operações de TI.">Um comando de rede para reiniciar o roteador</div>
+  <div class="quiz-question">4. O que é o `TypeScript` (citado como próximo passo)?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um novo tipo de processador</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Uma linguagem que adiciona "tipos" ao Javascript, evitando erros comuns em tempo de desenvolvimento">Uma linguagem que adiciona "tipos" ao Javascript, evitando erros comuns em tempo de desenvolvimento</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O sucessor do HTML</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma ferramenta para criar foguetes em 3D
+    *Explicação: TypeScript é o padrão em grandes empresas para projetos robustos.*</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">5. Qual o conselho final para quem acabou de concluir este curso de Fundamentos DevOps?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O mercado de tecnologia muda rápido; o aprendizado contínuo (Lifelong Learning) é a chave.">Parar de estudar porque você já sabe tudo sobre TI</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! A base foi construída; agora você deve continuar praticando, errando e aprendendo novas ferramentas e conceitos.">Continuar praticando o que aprendeu, construir seus próprios projetos e nunca parar de estudar as novidades da área</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O mercado de tecnologia muda rápido; o aprendizado contínuo (Lifelong Learning) é a chave.">Mudar de profissão para algo que não use computador</div>
-  <div class="quiz-option" data-correct="false" data-feedback="❌ Incorreto. O mercado de tecnologia muda rápido; o aprendizado contínuo (Lifelong Learning) é a chave.">Esperar alguém te contratar para só então começar a praticar</div>
+  <div class="quiz-question">5. O que significa ser um desenvolvedor `T-Shaped`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ter uma camiseta com estampa de código</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Ter conhecimento amplo em várias áreas (Backend, Frontend, UX) e profundo em uma (ex: Node.js)">Ter conhecimento amplo em várias áreas (Backend, Frontend, UX) e profundo em uma (ex: Node.js)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Programar apenas com a mão esquerda</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Saber usar apenas uma linguagem de programação
+    *Explicação: É o perfil mais valorizado pelas empresas modernas de tecnologia.*</div>
   <div class="quiz-feedback"></div>
 </div>
+
+<div class="quiz-container">
+  <div class="quiz-question">6. Qual a importância das `Soft Skills` para um desenvolvedor Full-Stack?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Nenhuma, dev só precisa falar com o computador</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Essencial para trabalhar em equipe, entender o cliente e explicar decisões técnicas">Essencial para trabalhar em equipe, entender o cliente e explicar decisões técnicas</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Serve apenas para quem trabalha no RH</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">É o nome de uma biblioteca de animação suave
+    *Explicação: Software é feito por pessoas para pessoas. Saber se comunicar é vital.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">7. O que é o `Next.js`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um curso para aprender Javascript em 5 minutos</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O framework React mais popular que permite criar sites rápidos com renderização no servidor (SSR)">O framework React mais popular que permite criar sites rápidos com renderização no servidor (SSR)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O nome do navegador do Google</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma versão do Javascript que roda apenas em smartwatches
+    *Explicação: Next.js é a evolução natural para quem já domina os fundamentos do React.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">8. Como se manter atualizado em um mercado que muda todo mês?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Lendo livros de 20 anos atrás</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Acompanhando documentações oficiais, comunidades, newsletters e praticando sempre">Acompanhando documentações oficiais, comunidades, newsletters e praticando sempre</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Esperando o chefe mandar estudar</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Decorando todos os comandos de uma vez
+    *Explicação: Estudo contínuo é parte fundamental da rotina de um desenvolvedor.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">9. O que fazer ao encontrar um bug impossível no seu código?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Chorar e desistir da carreira</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Consultar a documentação, fóruns como StackOverflow, usar IA (com sabedoria) e debugar passo a passo">Consultar a documentação, fóruns como StackOverflow, usar IA (com sabedoria) e debugar passo a passo</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apagar o Windows e reinstalar tudo</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ignorar o erro e avisar o usuário para não clicar ali
+    *Explicação: Resolver problemas complexos é a alma do trabalho do programador.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">10. Qual a mensagem final do curso para o aluno?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Que agora você já sabe tudo e não precisa mais estudar</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Que você construiu uma base sólida e agora tem o poder de criar soluções web completas">Que você construiu uma base sólida e agora tem o poder de criar soluções web completas</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Que o mercado de programação vai acabar amanhã</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Que o PHP é a única linguagem que existe
+    *Explicação: O curso é apenas o início de uma carreira incrível e cheia de inovação.*</div>
+  <div class="quiz-feedback"></div>
+</div>
+
